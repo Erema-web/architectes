@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Erema Bat · Le partenaire d'exécution des architectes</title>
+<meta name="description" content="Rénovation tous corps d'état à Paris, Île-de-France et Oise. Un seul interlocuteur, devis sous 48 h, garantie décennale.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Erema Bat">
+<meta property="og:title" content="Erema Bat · Le partenaire d'exécution des architectes">
+<meta property="og:description" content="Rénovation tous corps d'état à Paris. Un seul interlocuteur, devis sous 48 h, garantie décennale.">
+<meta property="og:url" content="https://erema-web.github.io/architectes/">
+<meta property="og:image" content="https://erema-web.github.io/architectes/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: brand brochure ported from the Claude Design deck. Cream ground, terracotta accent, deep green band. Caprasimo display, Figtree body. */
+:root{
+  --cream:#F5EAD8; --card:#F9F4ED; --peach:#FFF0E6; --mint:#E0EBCB;
+  --terra:#C67139; --terra-ink:#8E4A1B; --green:#272E1B; --ink:#1E1B16; --muted:#5E564B;
+  --display:'Caprasimo','Georgia',serif; --body:'Figtree','Helvetica Neue',Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--cream);color:var(--ink);font:400 16px/1.55 var(--body);padding-inline:16px;padding-block:0 84px}
+.wrap{max-width:1120px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--terra);outline-offset:3px}
+.pill{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--peach);color:var(--terra-ink);font:600 11px/1.2 var(--body);letter-spacing:.09em;text-transform:uppercase}
+.pill.mint{background:var(--mint);color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;border:0;background:var(--terra);color:#fff;font:600 15px/1 var(--body);text-decoration:none;cursor:pointer}
+.btn:hover{background:#b3632f}
+.btn.light{background:var(--cream);color:var(--green)}
+.btn.ghost{background:transparent;border:1.5px solid var(--green);color:var(--green)}
+.btn.sm{min-height:40px;padding:0 18px;font-size:14px}
+section{padding-block:72px 0}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 40px;margin-bottom:28px}
+.sec-head>div{display:grid;gap:14px;justify-items:start}
+.sec-head h2{font-size:clamp(32px,5.5vw,52px)}
+.sec-head p{max-width:34ch;color:var(--muted);font-size:14px}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:16px;position:sticky;top:env(safe-area-inset-top,0px);z-index:4;background:var(--cream)}
+.top img{width:48px;height:48px;border-radius:12px;display:block}
+.top nav{display:none;gap:22px;font-size:14px;font-weight:500}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--terra-ink)}
+@media(min-width:860px){.top nav{display:flex}}
+
+/* hero */
+.hero{display:grid;gap:32px;padding-block:20px 0}
+.hero-copy{display:grid;gap:24px;align-content:center;justify-items:start}
+.hero h1{font-size:clamp(42px,9vw,84px);letter-spacing:-.01em}
+.hero .lead{max-width:46ch;font-size:18px;color:var(--muted)}
+.hero .meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.hero .tag{padding:7px 14px;border-radius:999px;background:var(--card);font-size:13px;font-weight:600}
+.hero-img{margin:0;border-radius:28px 160px 160px 28px;overflow:hidden;aspect-ratio:4/5;max-height:640px}
+.hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+@media(min-width:860px){
+  .hero{grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-block:32px 0}
+  .hero-img{aspect-ratio:auto;height:640px;border-radius:28px 260px 260px 28px}
+}
+
+/* why */
+.cards{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border-radius:24px;padding:24px;display:grid;gap:10px;align-content:start;min-width:0}
+.card h3{font-size:21px}
+.card p{color:var(--muted);font-size:15px}
+.num{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--terra);color:#fff;font:700 14px/1 var(--body)}
+.quote{background:var(--mint);align-content:center}
+.quote h3{font-size:22px;color:var(--green)}
+.brands{color:var(--terra-ink);font-weight:600}
+
+/* method */
+.method{background:var(--green);color:var(--cream);border-radius:32px;padding:44px 24px;text-align:center}
+.method h2{font-size:clamp(30px,5vw,44px)}
+.method .sub{opacity:.75;margin:8px 0 32px;font-size:15px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:26px}
+.steps li{display:grid;gap:8px;justify-items:center}
+.steps h3{font-size:19px}
+.steps p{font-size:14px;opacity:.8;max-width:26ch}
+@media(min-width:900px){.steps{grid-template-columns:repeat(5,1fr);gap:20px}.method{padding:56px 40px}}
+
+/* about */
+.about{display:grid;gap:32px}
+@media(min-width:900px){.about{grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}}
+.about-copy{display:grid;gap:16px}
+.about-copy h2{font-size:clamp(32px,5vw,48px)}
+.about-copy>p{color:var(--muted);max-width:56ch}
+.note{border-radius:20px;padding:18px 20px;display:grid;gap:4px;font-size:14px;color:var(--muted)}
+.note b{color:var(--ink);font-size:14px}
+.note.a{background:var(--peach)} .note.b{background:var(--mint)}
+.stats{display:grid;gap:12px}
+.stat{border-radius:22px;padding:20px 24px;display:grid;gap:2px}
+.stat b{font:400 40px/1.05 var(--display)}
+.stat span{font-size:14px;color:var(--muted)}
+.stat.a{background:var(--peach)} .stat.a b{color:var(--terra-ink)}
+.stat.b{background:var(--mint)} .stat.b b{color:var(--green)}
+
+/* projects */
+.group+.group{margin-top:64px}
+.projects{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:640px){.projects{grid-template-columns:repeat(3,1fr);gap:16px}}
+.proj{display:grid;gap:10px;align-content:start;text-align:left;background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;min-width:0}
+.proj .ph{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:2/3}
+.proj img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.proj:hover img{transform:scale(1.04)}
+.proj .more{position:absolute;right:12px;bottom:12px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--ink);font-size:12px;font-weight:600}
+.proj .k{color:var(--terra-ink);font:600 11px/1.2 var(--body);letter-spacing:.09em;text-transform:uppercase}
+.proj h3{font-size:22px}
+.proj .moe{font-size:13px;font-weight:600}
+.proj p{font-size:14px;color:var(--muted)}
+
+/* contact */
+.contact{display:grid;gap:16px}
+@media(min-width:900px){.contact{grid-template-columns:1.3fr 1fr;gap:20px}}
+.form-box{display:grid;gap:22px;align-content:start}
+.form-box>h2{font-size:clamp(32px,5vw,52px)}
+.form-box>p{color:var(--muted);max-width:48ch}
+form{background:var(--card);border-radius:28px;padding:24px;display:grid;gap:16px}
+form .row{display:grid;gap:16px}
+@media(min-width:640px){form .row{grid-template-columns:1fr 1fr}}
+form h3{font-size:22px}
+label{display:grid;gap:6px;font:600 11px/1 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+input,select,textarea{width:100%;min-height:46px;padding:0 16px;border-radius:14px;border:1.5px solid #E2D5C0;background:#fff;color:var(--ink);font:400 15px/1.4 var(--body)}
+textarea{padding:12px 16px;min-height:96px;resize:vertical}
+.result{display:grid;gap:12px;padding:16px;border-radius:18px;background:var(--mint);color:var(--green)}
+.result pre{margin:0;white-space:pre-wrap;font:400 14px/1.5 var(--body)}
+.result .acts{display:flex;flex-wrap:wrap;gap:8px}
+.info{background:var(--green);color:var(--cream);border-radius:28px;padding:28px;display:grid;gap:18px;align-content:start}
+.info dt{font:600 11px/1 var(--body);letter-spacing:.09em;text-transform:uppercase;opacity:.6;margin-bottom:6px}
+.info dd{margin:0;font-size:15px;overflow-wrap:anywhere;display:grid;gap:2px}
+.info dd.big{font-size:20px;font-weight:700}
+.info .btn{margin-top:6px}
+.partners{margin-top:28px;display:grid;gap:12px}
+.partners b{font:600 11px/1 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.logos{display:flex;flex-wrap:wrap;gap:10px}
+.logos span{display:grid;place-items:center;height:56px;min-width:68px;padding:0 14px;border-radius:999px;background:#fff}
+.logos img{height:30px;width:auto;max-width:110px;object-fit:contain;display:block}
+footer{padding-block:32px 0;color:var(--muted);font-size:13px}
+
+/* dock + lightbox */
+.dock{position:fixed;inset:auto 0 0 0;z-index:5;display:flex;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--cream);border-top:1px solid #E2D5C0}
+.dock .btn{flex:1}
+@media(min-width:860px){.dock{display:none}body{padding-bottom:0}}
+.lb{position:fixed;inset:0;z-index:10;background:rgba(20,17,12,.95);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px}
+.lb img{max-width:100%;max-height:calc(100% - 84px);object-fit:contain;border-radius:8px}
+.lb .cap{color:#F5EAD8;text-align:center;font-size:14px}
+.lb .cap b{font-family:var(--display);font-weight:400;font-size:18px;display:block}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.16);color:#fff;font-size:22px;cursor:pointer}
+.lb .x{top:calc(12px + env(safe-area-inset-top,0px));right:12px}
+.lb .p{left:8px;top:50%;translate:0 -50%}
+.lb .n{right:8px;top:50%;translate:0 -50%}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <img src="img/logo.jpg" alt="Erema">
+    <nav aria-label="Sections"><a href="#pourquoi">Pourquoi Erema</a><a href="#metiers">Métiers</a><a href="#realisations">Réalisations</a><a href="#contact">Contact</a></nav>
+    <a class="btn sm" href="#contact">Devis 48 h</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="pill mint">Tous corps d'état · Paris · Île-de-France · Oise</span>
+        <h1>Le partenaire d'exécution des architectes.</h1>
+        <p class="lead">Nous réalisons vos projets, du plan à la remise des clés, avec une seule équipe et un seul interlocuteur. Vous concevez, nous exécutons.</p>
+        <div class="meta">
+          <a class="btn" href="#contact">Demander un devis</a>
+          <span class="tag">Devis 48 h</span><span class="tag">Garantie décennale</span>
+        </div>
+      </div>
+      <figure class="hero-img"><img src="img/hero.jpg" alt="Salon d'un appartement parisien rénové par Erema"></figure>
+    </div>
+
+    <section id="pourquoi">
+      <div class="sec-head"><div><span class="pill">Pourquoi Erema Bat</span><h2>Pourquoi les architectes nous confient l'exécution</h2></div></div>
+      <div class="cards">
+        <article class="card"><span class="num">1</span><h3>Un seul interlocuteur</h3><p>Nous coordonnons tous les corps de métier. Vous gardez la main sur le design, sans gérer six artisans.</p></article>
+        <article class="card"><span class="num">2</span><h3>Respect des délais</h3><p>Planning maîtrisé, jalons tenus, chantier livré dans les temps, y compris avant une ouverture.</p></article>
+        <article class="card"><span class="num">3</span><h3>Habitués à la maîtrise d'œuvre</h3><p>Nous lisons vos plans et exécutons vos intentions à la lettre, en dialogue constant avec la MOE.</p></article>
+        <article class="card"><span class="num">4</span><h3>Normes ERP maîtrisées</h3><p>Commerces, restaurants et établissements recevant du public livrés dans le respect des normes.</p></article>
+        <article class="card"><span class="num">5</span><h3>Qualité d'exécution</h3><p>Artisans dédiés par métier, marques de référence et finitions soignées sur chaque détail.</p></article>
+        <article class="card quote"><h3>« Vous concevez, nous exécutons, avec la même exigence que la vôtre. »</h3></article>
+      </div>
+    </section>
+
+    <section id="metiers">
+      <div class="sec-head"><div><span class="pill mint">Nos domaines d'intervention</span><h2>Six métiers, une seule équipe</h2></div><p>Chaque corps de métier assuré par des artisans dédiés et des marques sélectionnées pour leur fiabilité.</p></div>
+      <div class="cards">
+        <article class="card"><h3>Électricité &amp; domotique</h3><p>Mise aux normes NF C 15-100, tableaux, domotique. <span class="brands">Legrand · Hager · Schneider</span></p></article>
+        <article class="card"><h3>Plomberie &amp; sanitaire</h3><p>Salles de bain, chauffe-eau, réseaux. <span class="brands">Grohe · Hansgrohe · Geberit</span></p></article>
+        <article class="card"><h3>Gros œuvre &amp; structure</h3><p>Murs porteurs, cloisons, étanchéité. <span class="brands">Bureau d'étude intégré</span></p></article>
+        <article class="card"><h3>Menuiserie &amp; agencement</h3><p>Cuisines et dressings sur mesure, portes, parquets. <span class="brands">Egger · Blum · Vicaima</span></p></article>
+        <article class="card"><h3>Peinture &amp; finitions</h3><p>Peinture intérieure, enduits décoratifs, ravalement de façade.</p></article>
+        <article class="card"><h3>Sols &amp; murs</h3><p>Parquet massif, carrelage, béton ciré, moquette : conseil et pose.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="method">
+        <h2>Notre méthode</h2>
+        <p class="sub">De l'étude à la remise des clés</p>
+        <ol class="steps">
+          <li><span class="num">1</span><h3>Étude &amp; lecture des plans</h3><p>Analyse du projet avec vous et votre MOE.</p></li>
+          <li><span class="num">2</span><h3>Devis sous 48 h</h3><p>Chiffrage détaillé, transparent, sans engagement.</p></li>
+          <li><span class="num">3</span><h3>Planning &amp; coordination</h3><p>Un chef de chantier unique orchestre chaque métier.</p></li>
+          <li><span class="num">4</span><h3>Exécution tous corps d'état</h3><p>Artisans dédiés par métier, dans le bon ordre.</p></li>
+          <li><span class="num">5</span><h3>Réception &amp; garantie</h3><p>Livraison, levée des réserves et garantie décennale.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="about">
+        <div class="about-copy">
+          <span class="pill">Qui sommes-nous</span>
+          <h2>Une seule équipe pour tous les corps d'état</h2>
+          <p>Basée dans le 12ᵉ arrondissement de Paris, Erema réunit sous un même contrat l'ensemble des métiers d'un chantier de rénovation : gros œuvre, électricité, plomberie, menuiserie, peinture et revêtements, avec des équipes formées aux normes de chaque métier.</p>
+          <p>Pour un architecte, cela signifie un seul planning, une seule responsabilité et un interlocuteur qui traduit vos plans en chantier maîtrisé, à Paris, en Île-de-France et dans l'Oise.</p>
+          <div class="note a"><b>Commerces &amp; ERP</b>Équipes formées aux normes ERP : sécurité incendie, accessibilité PMR, conformité électricité (NF C 15-100) et plomberie. Vos boutiques et restaurants livrés prêts pour la commission de sécurité.</div>
+          <div class="note b"><b>Appartements &amp; logements</b>Notre atelier de menuiserie intérieure et d'agencement fabrique sur mesure pour vos projets : bibliothèques, cuisines, dressings, claustras, dessinés par vous, fabriqués et posés par nous.</div>
+        </div>
+        <div class="stats">
+          <div class="stat a"><b>10 ans</b><span>d'expérience en rénovation à Paris</span></div>
+          <div class="stat b"><b>6 métiers</b><span>coordonnés par une seule équipe</span></div>
+          <div class="stat a"><b>48 h</b><span>pour recevoir un devis détaillé</span></div>
+          <div class="stat b"><b>Décennale</b><span>garantie sur l'ensemble des travaux</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="realisations">
+      <div class="group">
+        <div class="sec-head"><div><span class="pill">Nos réalisations</span><h2>Appartements &amp; logements</h2></div><p>Réalisés en collaboration avec des architectes d'intérieur et maîtres d'œuvre reconnus. Touchez un projet pour voir les photos.</p></div>
+        <div class="projects" id="res"></div>
+      </div>
+      <div class="group">
+        <div class="sec-head"><div><span class="pill mint">Nos réalisations</span><h2>Commerces &amp; ERP</h2></div><p>Boutiques, bars et restaurants livrés aux normes ERP et accessibilité, dans les délais d'ouverture.</p></div>
+        <div class="projects" id="com"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="form-box">
+          <div style="display:grid;gap:14px;justify-items:start"><span class="pill">Parlons de votre projet</span><h2>Confiez-nous votre prochain chantier</h2></div>
+          <p>Décrivez-nous votre projet : notre équipe vous répond sous 48 h avec un devis gratuit, détaillé et sans engagement.</p>
+          <form id="f" novalidate>
+            <h3>Demander un devis</h3>
+            <div class="row">
+              <label for="nom">Nom &amp; prénom<input id="nom" placeholder="Votre nom" autocomplete="name"></label>
+              <label for="tel">Téléphone<input id="tel" type="tel" placeholder="06 00 00 00 00" autocomplete="tel"></label>
+            </div>
+            <div class="row">
+              <label for="mail">E-mail<input id="mail" type="email" placeholder="vous@agence.fr" autocomplete="email"></label>
+              <label for="type">Type de projet<select id="type"><option>Appartement</option><option>Commerce</option><option>ERP</option><option>Autre</option></select></label>
+            </div>
+            <label for="msg">Votre projet<textarea id="msg" placeholder="Surface, adresse, corps d'état concernés, échéance souhaitée…"></textarea></label>
+            <div><button class="btn" type="submit">Préparer ma demande</button></div>
+            <div class="result" id="res-box" hidden>
+              <pre id="res-txt"></pre>
+              <div class="acts">
+                <a class="btn sm" id="wa" href="#" target="_blank" rel="noopener">Envoyer sur WhatsApp</a>
+                <button class="btn sm ghost" type="button" id="cp">Copier le message</button>
+              </div>
+            </div>
+          </form>
+          <div class="partners"><b>Nos partenaires</b>
+            <div class="logos">
+              <span><img src="img/p-unikalo.jpg" alt="Unikalo"></span><span><img src="img/p-kline.jpg" alt="K•LINE"></span>
+              <span><img src="img/p-3.jpg" alt="Partenaire"></span><span><img src="img/p-4.jpg" alt="Partenaire"></span>
+              <span><img src="img/p-5.jpg" alt="Partenaire"></span><span><img src="img/p-6.jpg" alt="Partenaire"></span>
+            </div>
+          </div>
+        </div>
+        <aside class="info">
+          <img src="img/logo.jpg" alt="Erema" width="56" height="56" style="border-radius:14px">
+          <dl style="margin:0;display:grid;gap:18px">
+            <div><dt>Localisation</dt><dd>Basés dans le 12ᵉ arrondissement de Paris</dd></div>
+            <div><dt>Zones d'intervention</dt><dd>Paris 1ᵉʳ–20ᵉ · Île-de-France (92 · 93 · 94 · 91 · 78 · 77 · 95)</dd><dd>Oise : Chantilly, Senlis, Gouvieux, Lamorlaye</dd></div>
+            <div><dt>Téléphone</dt><dd class="big">07 76 11 73 90</dd><dd class="big">07 66 72 68 47</dd></div>
+            <div><dt>E-mail · Web</dt><dd>acecen@eremabat.fr</dd><dd>rcecen@eremabat.fr</dd><dd>erema.bat@outlook.fr</dd><dd><a href="https://eremabat.fr" target="_blank" rel="noopener">eremabat.fr</a></dd></div>
+          </dl>
+          <a class="btn light" href="https://wa.me/33776117390" target="_blank" rel="noopener">Devis gratuit sous 48 h</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer>Erema Bat · Rénovation tous corps d'état · Paris 12ᵉ · <a href="https://eremabat.fr" target="_blank" rel="noopener">eremabat.fr</a></footer>
+</div>
+
+<div class="dock"><a class="btn" href="https://wa.me/33776117390?text=Bonjour%2C%20je%20suis%20architecte%20et%20j%27ai%20vu%20votre%20plaquette." target="_blank" rel="noopener">Discuter d'un projet sur WhatsApp</a></div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photos du projet">
+  <button class="x" id="lbx" aria-label="Fermer">✕</button>
+  <button class="p" id="lbp" aria-label="Photo précédente">‹</button>
+  <img id="lbi" alt="">
+  <button class="n" id="lbn" aria-label="Photo suivante">›</button>
+  <div class="cap" id="lbc"></div>
+</div>
+
+<script>
+function g(p,l){var a=[];for(var i=0;i<l.length;i++)a.push('img/'+p+'-'+l[i]+'.jpg');return a}
+function n(p,c){var a=[];for(var i=1;i<=c;i++)a.push('img/'+p+'-'+i+'.jpg');return a}
+var PROJ={
+ res:[
+  {t:'Exelmans',k:'75016 — Résidentiel',moe:'MOE : Atelier OLA',d:'Rénovation complète : redistribution des volumes et menuiseries cintrées sur mesure.',cover:'img/exelmans.jpg',
+   ph:g('res',['salon-cuisine','salon','cuisine','detail-chene','chambre','placard-bleu','sous-pente','entree'])},
+  {t:'La Motte Picquet',k:'75015 — Résidentiel',moe:'MOE : Atelier OLA',d:'Cuisine en longueur : plan pierre, façades noyer et parquet point de Hongrie.',cover:'img/motte.jpg',
+   ph:g('apt',['cuisine','bibliotheque','marbre','placards','chambre','tete-de-lit'])},
+  {t:'Ricquet',k:'Paris — Résidentiel',moe:'Rénovation d\'appartement',d:'Cuisine ouverte : façades noires, crédence liège et parquet mosaïque restauré.',cover:'img/ricquet-1.jpg',ph:n('ricquet',7)}
+ ],
+ com:[
+  {t:'Joke Comédie Club',k:'Commerce — ERP',moe:'MOE : Rendero Studio',d:'Bar et salle aux normes ERP : comptoir tasseauté rétroéclairé, laiton, délais serrés.',cover:'img/joke-1.jpg',ph:n('joke',8)},
+  {t:'Donatien Maître Éclair',k:'Commerce — Pâtisserie',moe:'MOE : Studio Carré',d:'Comptoir laiton poli miroir, étagères cintrées en bois massif et enduits teintés.',cover:'img/donatien.jpg',
+   ph:g('don',['facade','ilot-laiton','niche-courbe','soleil','etageres','applique','appliques','inox-rose'])},
+  {t:'APZ',k:'Commerce — ERP',moe:'MOE : Trung Nguyen Viet',d:'Comptoir monolithe, murs bleu nuit, sanitaires zellige : livré aux normes ERP.',cover:'img/apz-1.jpg',ph:n('apz',5)}
+ ]
+};
+var cur=null,idx=0,lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),lbc=document.getElementById('lbc');
+['res','com'].forEach(function(key){
+  var box=document.getElementById(key);
+  PROJ[key].forEach(function(p){
+    var b=document.createElement('button');b.type='button';b.className='proj';
+    b.innerHTML='<div class="ph"><img loading="lazy" src="'+p.cover+'" alt="'+p.t+'">'+(p.ph.length>1?'<span class="more">'+p.ph.length+' photos</span>':'')+'</div><span class="k">'+p.k+'</span><h3>'+p.t+'</h3><span class="moe">'+p.moe+'</span><p>'+p.d+'</p>';
+    b.onclick=function(){cur=p;idx=0;show();lb.hidden=false;document.getElementById('lbx').focus()};
+    box.appendChild(b);
+  });
+});
+function show(){lbi.src=cur.ph[idx];lbi.alt=cur.t;lbc.innerHTML='<b>'+cur.t+'</b>'+cur.moe+(cur.ph.length>1?' · '+(idx+1)+'/'+cur.ph.length:'')}
+function step(d){if(cur.ph.length<2)return;idx=(idx+d+cur.ph.length)%cur.ph.length;show()}
+function close_(){lb.hidden=true}
+document.getElementById('lbx').onclick=close_;
+document.getElementById('lbp').onclick=function(){step(-1)};
+document.getElementById('lbn').onclick=function(){step(1)};
+lb.onclick=function(e){if(e.target===lb)close_()};
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close_();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
+var sx=null;
+lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(sx===null)return;var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)step(d<0?1:-1);sx=null});
+
+var f=document.getElementById('f'),rb=document.getElementById('res-box'),rt=document.getElementById('res-txt'),wa=document.getElementById('wa'),txt='';
+f.addEventListener('submit',function(e){
+  e.preventDefault();
+  var v=function(i){return document.getElementById(i).value.trim()};
+  txt='Bonjour, je souhaite un devis pour un projet ('+v('type').toLowerCase()+').\n'+
+    (v('msg')?'Projet : '+v('msg')+'\n':'')+
+    'Contact : '+(v('nom')||'—')+(v('tel')?' · '+v('tel'):'')+(v('mail')?' · '+v('mail'):'');
+  rt.textContent=txt;
+  wa.href='https://wa.me/33776117390?text='+encodeURIComponent(txt);
+  rb.hidden=false;
+});
+document.getElementById('cp').onclick=function(){
+  var b=this;
+  function done(){b.textContent='Copié';setTimeout(function(){b.textContent='Copier le message'},1500)}
+  function sel(){var r=document.createRange();r.selectNodeContents(rt);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,sel)}else{sel()}
+};
+</script>
+
+</body>
+</html>
